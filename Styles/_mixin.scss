@@ -1,0 +1,52 @@
+@mixin sectionBorder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin title {
+    position: relative;
+    color: #292d32;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+@mixin afterTitle($width, $right) {
+    content: "";
+    position: absolute;
+    top: 1.2rem;
+    right: $right;
+    width: $width;
+    height: 0.4rem;
+    background: linear-gradient(
+      90deg,
+      rgba(217, 217, 217, 0.136) 0%,
+      rgba(230, 234, 238, 0.8) 46.88%,
+      rgba(217, 217, 217, 0.088) 100%
+    );
+}
+
+@mixin more{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+@mixin moreLink{
+    color: #ff9acb;
+        font-size: 1.3rem;
+        font-weight: 600;
+}
+
+@mixin moreImage {
+    width: 1.5rem;
+}
+
+@mixin login-signup {
+    font-size: 2rem;
+    color: $pink-color;
+    background: $very-light-pink-color;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+    border-radius: 1rem;
+  }
